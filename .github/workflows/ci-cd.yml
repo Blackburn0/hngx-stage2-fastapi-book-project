@@ -44,7 +44,7 @@ jobs:
       - name: Setup SSH and Deploy
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          SERVER_IP: "YOUR_SERVER_IP"
+          SERVER_IP: "3.80.23.179"
         run: |
           mkdir -p ~/.ssh
           printf "%s" "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
